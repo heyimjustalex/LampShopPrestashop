@@ -34,19 +34,19 @@
         ?>
 
         <?php
-            $host = "db";
-            $port = "5432";
-            $user = "root";
-            $pass = "root";
-            $dbname = "test";
-            $db = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass);
-
+            $servername = "db";
+            $username = "root";
+            $password = "root";
+            
+            // Create connection
+            $conn = new mysqli($servername, $username, $password);
+            
             echo "<div id='info-div'>";
-
-            if($db)
-                echo "Database connected";
-            else
-                echo "Database connection failed";
+            
+            if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+            }
+            echo "Connected successfully";
 
             echo "</div>";
         ?>
