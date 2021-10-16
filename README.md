@@ -38,7 +38,7 @@ $ docker container prune
 + PHP
 + html + css
 + javascript
-+ PostgreSQL
++ MySQL
 + prestashop
 
 ---
