@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-20 16:13:09
+/* Smarty version 3.1.39, created on 2021-11-02 17:02:29
   from '/var/www/html/admin742rovy9v/themes/default/template/helpers/calendar/calendar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_617023f585bae3_96214896',
+  'unifunc' => 'content_618161157318d7_31388620',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '649a10fc398ce62b1f135a64820303c6636c850d' => 
     array (
       0 => '/var/www/html/admin742rovy9v/themes/default/template/helpers/calendar/calendar.tpl',
-      1 => 1633363913,
+      1 => 1635867501,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_617023f585bae3_96214896 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618161157318d7_31388620 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="datepicker" class="row row-padding-top hide">
 	<div class="col-lg-12">
 		<div class="daterangepicker-days">

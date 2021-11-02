@@ -11,7 +11,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* PrestaShopBundle:Admin:layout.html.twig */
+/* @PrestaShop/Admin/layout.html.twig */
 class __TwigTemplate_b8c27cb530ced55730f99edf763571b6fa749969f04fbc8e7c2806029f1a7ef2 extends \Twig\Template
 {
     public function __construct(Environment $env)
@@ -40,13 +40,13 @@ array_key_exists("headerTabContent", $context)) ? (($context["headerTabContent"]
 array_key_exists("enableSidebar", $context)) ? (($context["enableSidebar"] ?? null)) : (false)), ((        // line 34
 array_key_exists("help_link", $context)) ? (($context["help_link"] ?? null)) : ("")), $this->env->getExtension('PrestaShopBundle\Twig\Extension\JsRouterMetadataExtension')->getJsRouterMetadata(), ((        // line 36
 array_key_exists("meta_title", $context)) ? (($context["meta_title"] ?? null)) : ("")), ((        // line 37
-array_key_exists("use_regular_h1_structure", $context)) ? (($context["use_regular_h1_structure"] ?? null)) : (true)))), "PrestaShopBundle:Admin:layout.html.twig", 25);
+array_key_exists("use_regular_h1_structure", $context)) ? (($context["use_regular_h1_structure"] ?? null)) : (true)))), "@PrestaShop/Admin/layout.html.twig", 25);
     }
 
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 41
-        $context["ps"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "PrestaShopBundle:Admin:layout.html.twig", 41)->unwrap();
+        $context["ps"] = $this->loadTemplate("@PrestaShop/Admin/macros.html.twig", "@PrestaShop/Admin/layout.html.twig", 41)->unwrap();
         // line 25
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
@@ -248,7 +248,7 @@ array_key_exists("use_regular_h1_structure", $context)) ? (($context["use_regula
 
     public function getTemplateName()
     {
-        return "PrestaShopBundle:Admin:layout.html.twig";
+        return "@PrestaShop/Admin/layout.html.twig";
     }
 
     public function isTraitable()
@@ -271,6 +271,6 @@ array_key_exists("use_regular_h1_structure", $context)) ? (($context["use_regula
 
     public function getSourceContext()
     {
-        return new Source("", "PrestaShopBundle:Admin:layout.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/layout.html.twig");
+        return new Source("", "@PrestaShop/Admin/layout.html.twig", "/var/www/html/src/PrestaShopBundle/Resources/views/Admin/layout.html.twig");
     }
 }
