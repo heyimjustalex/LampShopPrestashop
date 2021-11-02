@@ -3,7 +3,7 @@
 sudo chown -R www-data:www-data "."
 ```
 
-albo nadać dodatkowe uprawnienia plikow
+albo nadać dodatkowe uprawnienia plikom
 ```shell
 find . -type f -exec chmod 755 {} /;
 ```
