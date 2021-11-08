@@ -134,19 +134,21 @@ class Ps_ImageSlider extends Module implements WidgetInterface
     protected function installSamples()
     {
         $languages = Language::getLanguages(false);
-        for ($i = 1; $i <= 3; ++$i) {
+        for ($i = 1; $i <= 4; ++$i) {
             $slide = new Ps_HomeSlide();
             $slide->position = $i;
             $slide->active = 1;
-            foreach ($languages as $language) {
-                $slide->title[$language['id_lang']] = 'Sample '.$i;
-                $slide->description[$language['id_lang']] = '<h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>';
-                $slide->legend[$language['id_lang']] = 'sample-'.$i;
-                $slide->url[$language['id_lang']] = 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider'
-                    .'&utm_campaign=back-office-'.Tools::strtoupper($this->context->language->iso_code)
-                    .'&utm_content='.(defined('_PS_HOST_MODE_') ? 'ondemand' : 'download');
-                $slide->image[$language['id_lang']] = 'sample-'.$i.'.jpg';
+            if($i != 3){
+                foreach ($languages as $language) {
+                    $slide->title[$language['id_lang']] = 'Sample '.$i;
+                    $slide->description[$language['id_lang']] = '<h3>EXCEPTEUR OCCAECAT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p>';
+                    $slide->legend[$language['id_lang']] = 'sample-'.$i;
+                    $slide->url[$language['id_lang']] = 'http://www.prestashop.com/?utm_source=back-office&utm_medium=v17_homeslider'
+                        .'&utm_campaign=back-office-'.Tools::strtoupper($this->context->language->iso_code)
+                        .'&utm_content='.(defined('_PS_HOST_MODE_') ? 'ondemand' : 'download');
+                    $slide->image[$language['id_lang']] = 'sample-'.$i.'.jpg';
+                }
             }
             $slide->add();
         }
