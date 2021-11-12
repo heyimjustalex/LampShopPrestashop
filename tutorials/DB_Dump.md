@@ -18,3 +18,7 @@ docker cp mysql_container:/db_dump.sql ./mysql/init
 ```
 
 6. To wszystko, można teraz przenieść bazę danych gdzie idziej :D
+7. Ewentualnie można jeszcze wejsć z powrotem do kontenera i usunąć stworzonego dumpa poleceniem 
+```shell
+rm db_dump.sql
+```
