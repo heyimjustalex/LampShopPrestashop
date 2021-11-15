@@ -21,6 +21,7 @@ services:
     image: prestashop/prestashop:1.7
     ports:
       - 8000:80
+      - 8001:443
     restart: always
     environment:
       DB_SERVER: mysql
