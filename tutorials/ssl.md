@@ -1,4 +1,4 @@
-po wykonaniu skryptu trzeba wejsc w administratora w prescie, zakladka preferencje -> ruch
+po wykonaniu skryptu /ssl/generate_keys.sh trzeba wejsc w administratora w prescie, zakladka preferencje -> ruch
 zjechac na dol i w domenie ssl zmienic na localhost:8001
 
 potem w preferencje -> ogolny
