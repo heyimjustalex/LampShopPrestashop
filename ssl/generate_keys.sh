@@ -11,13 +11,13 @@ docker cp localhost.csr prestashop:/etc/apache2/sites-available
 docker cp domains.ext prestashop:/etc/apache2/sites-available
 docker cp 000-default.conf prestashop:/etc/apache2/sites-available
 
-#rm localhost.crt
-#rm localhost.key
-#rm localhost.csr
-#rm RootCA.pem
-#rm RootCA.crt
-#rm RootCA.key
-#rm RootCA.srl
+# rm localhost.crt
+# rm localhost.key
+# rm localhost.csr
+# rm RootCA.pem
+# rm RootCA.crt
+# rm RootCA.key
+# rm RootCA.srl
 
 docker exec -it prestashop a2enmod ssl
 docker exec -it prestashop service apache2 restart
