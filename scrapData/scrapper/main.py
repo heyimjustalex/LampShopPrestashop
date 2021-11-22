@@ -11,7 +11,7 @@ import datetime
 start = datetime.datetime.now()
 
 CS = CategoryService()
-CS.FindAllCategory("Strona Główna","https://light-home.pl/2-lampy")
+CS.FindAllCategory("Asortyment","https://light-home.pl/2-lampy")
 CS.saveToFile()
 
 LS = LampService()
