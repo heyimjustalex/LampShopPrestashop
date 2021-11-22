@@ -1,0 +1,6 @@
+
+# Disable shop's cache folders
+**/cache
+
+# Disable shop's logs
+*.log
