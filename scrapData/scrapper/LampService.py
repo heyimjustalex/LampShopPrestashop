@@ -58,7 +58,8 @@ class LampService:
             priceB = self.FormatPrice(bs.find('span', {"id": "our_price_display"}).get_text())
             priceN = self.BruttoToNetto(23,priceB)
             imageLink = bs.find('a', class_="span_link no-print shown replace-2x")['href']
-            category = bs.find('section', class_='breadcrumb').get_text().split(">")[1]
+            category = self.test(bs)
+            print(category)
             #category = "Lamp," + categorys[1]+","+categorys[2]
             #width = bs.find('div', class_="pa_content")
             descriptionProduct = self.getDescription(str(bs.find('div', class_='pa_content').find('div', class_="rte")))
@@ -88,3 +89,10 @@ class LampService:
         price2 = price.replace(",",".")
         price3 = float(price2)
         return str(round(price3/100*(100-podatek),2)).replace(".",",")
+
+    def test(self,bs):
+        try:
+            category = bs.find('section', class_='breadcrumb').get_text().split(">")[2]
+            return category
+        except IndexError:
+            return "Plafony nowoczesne"
