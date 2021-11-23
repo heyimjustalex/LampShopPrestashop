@@ -32,11 +32,11 @@ id;name;parentCategory;nameUrl
 41;Plafony chrom;Lampy chromowane;41
 42;Lampy wiszące chrom;Lampy chromowane;42
 43;Kinkiety chrom;Lampy chromowane;43
-44;Lampy LOFT oraz Industrialne;Asortyment;44
-45;Lampy kinkiety LOFT oraz Industrialne;Lampy LOFT oraz Industrialne;45
-46;Lampy 1-płomienne LOFT oraz Industrialne;Lampy LOFT oraz Industrialne;46
-47;Lampy 3-płomienne LOFT oraz Industrialne;Lampy LOFT oraz Industrialne;47
-48;Lampy 5-płomienne LOFT oraz Industrialne;Lampy LOFT oraz Industrialne;48
+44;Lampy LOFT / Industrialne;Asortyment;44
+45;Lampy kinkiety LOFT / Industrialne;Lampy LOFT / Industrialne;45
+46;Lampy 1-płomienne LOFT / Industrialne;Lampy LOFT / Industrialne;46
+47;Lampy 3-płomienne LOFT / Industrialne;Lampy LOFT / Industrialne;47
+48;Lampy 5-płomienne LOFT / Industrialne;Lampy LOFT / Industrialne;48
 49;Lampy sufitowe;Asortyment;49
 50;Lampy sufitowe klasyczne;Lampy sufitowe;50
 51;Lampy sufitowe nowoczesne;Lampy sufitowe;51
@@ -56,7 +56,7 @@ id;name;parentCategory;nameUrl
 65;Zwisy wiszące pojedyncze regulowane;Zwisy wiszące;65
 66;Zwisy wiszące pojedyncze dekoracyjne;Zwisy wiszące;66
 67;Lampki stołowe nocne;Asortyment;67
-68;Lampy podłogowe oraz stojące;Asortyment;68
+68;Lampy podłogowe / stojące;Asortyment;68
 69;Lampy dziecięce;Asortyment;69
 70;Kinkiety dziecięce;Lampy dziecięce;70
 71;Lampy wiszące dziecięce;Lampy dziecięce;71
@@ -66,13 +66,32 @@ id;name;parentCategory;nameUrl
 75;Żarówki LED;Źródła światła;75
 76;Żarówki halogenowe;Źródła światła;76
 77;Żarówki dekoracyjne;Źródła światła;77
-78;Plafony domowe oraz wewnętrzne;Asortyment;78
-79;Plafony klasyczne ;Plafony domowe oraz wewnętrzne;79
-80;Plafony nowoczesne;Plafony domowe oraz wewnętrzne;80
-81;Plafony dziecięce;Plafony domowe oraz wewnętrzne;81
-82;Plafony kolorowe;Plafony domowe oraz wewnętrzne;82
-83;Reflektory sufitowe oraz spoty;Asortyment;83
+78;Plafony domowe / wewnętrzne;Asortyment;78
+79;Plafony klasyczne ;Plafony domowe / wewnętrzne;79
+80;Plafony nowoczesne;Plafony domowe / wewnętrzne;80
+81;Plafony dziecięce;Plafony domowe / wewnętrzne;81
+82;Plafony kolorowe;Plafony domowe / wewnętrzne;82
+83;Reflektory sufitowe / spoty;Asortyment;83
 84;Akcesoria do lamp;Asortyment;84
 85;Klosze szklane;Akcesoria do lamp;85
 86;Klosze metalowe;Akcesoria do lamp;86
 87;Lampy ogrodowe;Asortyment;87
+88;Style lamp;Asortyment;88
+89;Lampy skandynawskie;Style lamp;89
+90;Lampy glamour;Style lamp;90
+91;Lampy minimalistyczne;Style lamp;91
+92;Lampy art deco;Style lamp;92
+93;Lampy rustykalne;Style lamp;93
+94;Do pomieszczeń;Asortyment;94
+95;Lampy do salonu;Do pomieszczeń;95
+96;Lampy do łazienki;Do pomieszczeń;96
+97;Lampy do biura;Do pomieszczeń;97
+98;Lampy do sypialni;Do pomieszczeń;98
+99;Lampy do jadalni;Do pomieszczeń;99
+100;Według koloru;Asortyment;100
+101;Niebieski;Według koloru;101
+102;Biały;Według koloru;102
+103;Czarny;Według koloru;103
+104;Szary;Według koloru;104
+105;Srebrny;Według koloru;105
+106;Złoty;Według koloru;106

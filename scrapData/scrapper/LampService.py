@@ -59,7 +59,7 @@ class LampService:
             priceN = self.BruttoToNetto(23,priceB)
             imageLink = bs.find('a', class_="span_link no-print shown replace-2x")['href']
             category = self.test(bs)
-            print(category)
+           # print(category)
             #category = "Lamp," + categorys[1]+","+categorys[2]
             #width = bs.find('div', class_="pa_content")
             descriptionProduct = self.getDescription(str(bs.find('div', class_='pa_content').find('div', class_="rte")))
@@ -93,6 +93,9 @@ class LampService:
     def test(self,bs):
         try:
             category = bs.find('section', class_='breadcrumb').get_text().split(">")[2]
+            if(category.find("/")):
+                category = category.replace("/","oraz")
+                
             return category
         except IndexError:
-            return "Plafony nowoczesne"
+            return bs.find('section',class_='breadcrumb').get_text().split(">")[1]
