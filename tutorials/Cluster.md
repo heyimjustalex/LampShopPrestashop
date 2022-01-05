@@ -9,6 +9,13 @@
 docker-compose up --build
 ```
 3. Nalezy pamiętać, że potrzebne jest również wygenerowanie kluczy do połączenia SSH. Patrz tutorial z SSH.
+4. Pamiętaj, aby po sklonowaniu projektu za pomocą gita nadać odpowiednie prawa wszystkim plikow sklepu. Najłatwiej po prostu wejść do katalago z plikami sklepu i wpisać koleno komendy:
+```bash
+sudo chown -R www-data:www-data .
+```
+```bash
+sudo chmod -R 777 .
+```
 
 ---
 
