@@ -8,7 +8,12 @@
 ```bash
 docker-compose up --build
 ```
-3. Nalezy pamiętać, że potrzebne jest również wygenerowanie kluczy do połączenia SSH. Patrz tutorial z SSH.
+
+3. Nie jest już potrzebne osobne generowanie kluczy :D Jednakże czasami potrzebne jest usunięcie folderu /install (lub jego plików) z kontenera prestashopa komendą
+```bash
+docker exec -it <container_id> rm -rf /var/www/html/install/
+```
+
 4. Pamiętaj, aby po sklonowaniu projektu za pomocą gita nadać odpowiednie prawa wszystkim plikow sklepu. Najłatwiej po prostu wejść do katalago z plikami sklepu i wpisać koleno komendy:
 ```bash
 sudo chown -R www-data:www-data .
