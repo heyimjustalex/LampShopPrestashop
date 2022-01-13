@@ -1,16 +1,5 @@
 FROM prestashop/prestashop:1.7
 
-# --------------- Setting Environment Variables --------------- 
-ENV DB_SERVER=mysql
-ENV DB_USER=root
-ENV DB_PASSWD=root
-ENV DB_NAME=prestashop
-ENV PS_FOLDER_ADMIN=admin
-ENV PS_FOLDER_INSTALL=install
-ENV PS_INSTALL_AUTO=0
-ENV PS_WEBSERVICE=1
-
-
 # --------------- Setting Shop Files --------------- 
 COPY ./shop/ /var/www/html/
 
@@ -33,8 +22,7 @@ RUN service apache2 restart
 
 
 # --------------- Removing Unused Files --------------- 
-WORKDIR /
-RUN rm -rf /var/www/html/install/
+RUN rm -rf /var/www/html/install
 
 
 # --------------- Setting Private Ports --------------- 
