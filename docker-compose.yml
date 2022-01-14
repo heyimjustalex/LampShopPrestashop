@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  BE_176084:
+  team_dziubale:
     image: heyimjustalex/176084_presta_image:176084_presta_image_v1
     ports:
       - 17608:80
