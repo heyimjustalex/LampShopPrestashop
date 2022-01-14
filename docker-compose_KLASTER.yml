@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  team_dziubale:
+          image: heyimjustalex/176084_presta_image:176084_presta_image_v1
+    ports:
+      - 17608:80
+      - 17609:443    
+    restart: always
+    environment:
+      PS_INSTALL_AUTO: 0
+      PS_ERASE_DB: 0
+      DB_HOST: actina15.maas
+      DB_USER: BE_176084
+      DB_PASSWD: BE_Admin123#
+      DB_NAME: DB_176084
+      PS_DEV_MODE: 0   
+      ALLOW_OVERRIDE: 1
+
+ 

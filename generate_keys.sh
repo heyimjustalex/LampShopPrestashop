@@ -8,8 +8,8 @@ openssl x509 -req -sha256 -days 1024 -in localhost.csr -CA RootCA.pem -CAkey Roo
 docker cp ssl/localhost.crt prestashop:/etc/apache2/sites-available
 docker cp ssl/localhost.key prestashop:/etc/apache2/sites-available
 docker cp ssl/localhost.csr prestashop:/etc/apache2/sites-available
-docker cp ssl/ldomains.ext prestashop:/etc/apache2/sites-available
-docker cp ssl/l000-default.conf prestashop:/etc/apache2/sites-available
+docker cp ssl/domains.ext prestashop:/etc/apache2/sites-available
+docker cp ssl/000-default.conf prestashop:/etc/apache2/sites-available
 
 # rm localhost.crt
 # rm localhost.key

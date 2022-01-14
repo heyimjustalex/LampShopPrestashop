@@ -14,8 +14,9 @@ RUN a2enmod ssl
 RUN service apache2 restart
 
 # --------------- Setting Private Ports --------------- 
-EXPOSE 80 443
+EXPOSE 80 
+EXPOSE 443
 
 # --------------- Removing Unused Files ---------------
 
-CMD rm -rfd /var/www/html/install
+RUN rm -rfd /var/www/html/install
