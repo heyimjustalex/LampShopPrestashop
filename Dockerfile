@@ -9,7 +9,6 @@ COPY ssl/ /etc/apache2/sites-available
 RUN chown -R www-data:root /var/www/html
 
 # --------------- RUN COMMANDS --------------- 
-WORKDIR /etc/apache2/sites-available
 
 RUN a2enmod ssl
 RUN service apache2 restart

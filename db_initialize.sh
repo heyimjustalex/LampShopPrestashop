@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONTAINER="WPISZ TUTAJ"
+CONTAINER="admin-mysql_db.1.jhmt04hxq732lvnr76m7ikzlv"
 
 docker cp ./*.sql $CONTAINER:/tmp/BE_176084.sql
 docker cp ./db_setup.sh $CONTAINER:/tmp/db_setup.sh
