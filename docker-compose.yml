@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   team_dziubale:
-    image: heyimjustalex/176084_presta_image:176084_presta_image_v1
+          image: heyimjustalex/176084_presta_image_v1:latest
     ports:
       - 17608:80
       - 17609:443    
