@@ -1,75 +1,21 @@
-version: '3'
+version: '3.9'
 
 services:
-  mysql:
-    container_name: mysql
-    image: mysql:5.7
-    volumes:
-      - ./mysql/init:/docker-entrypoint-initdb.d
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: BE_176084
-    networks:
-      - prestashop
-
-  prestashop:
-    container_name: prestashop
-    depends_on:
-      - mysql
-    build:
-      context: .
-      dockerfile: .docker/prestashop/Dockerfile
+  BE_176084:
+    container_name: BE_176084
+    image: BE_176084
     ports:
-      - 8000:80
-      - 8001:443
+      - 17608:80
+      - 17609:443    
     restart: always
     environment:
-      DB_SERVER: mysql
-      DB_USER: root
-      DB_PASSWD: root
-      DB_NAME: BE_176084
-      PS_FOLDER_ADMIN: admin
-      PS_FOLDER_INSTALL: install
       PS_INSTALL_AUTO: 0
-    networks:
-      - prestashop
+      PS_ERASE_DB: 0
+      DB_HOST: actina15.maas
+      DB_USER: BE_176084
+      DB_PASSWD: BE_Admin123#
+      DB_NAME: DB_176084
+      PS_DEV_MODE: 0   
+      ALLOW_OVERRIDE: 1
 
-  phpmyadmin:
-    container_name: phpmyadmin
-    image: phpmyadmin/phpmyadmin
-    ports:
-      - 8080:80
-    depends_on:
-      - mysql
-    environment:
-      PMA_HOST: mysql
-      PMA_USER: root
-      PMA_PASSWORD: root
-    networks:
-      - prestashop
-
-networks:
-  prestashop:
-
-
-
-# version: '3.9'
-
-# services:
-#   prestashop:
-#     container_name: prestashop
-#     build:
-#       context: .
-#       dockerfile: ./.docker/prestashop/Dockerfile
-#     restart: always
-#     environment:
-#       DB_USER: root
-#       DB_PASSWD: root
-#       DB_NAME: prestashop
-#       PS_ERASE_DB: 0
-#       PS_INSTALL_AUTO: 0
-#       DB_HOST: localhost:3306
-#     ports:
-#       - 8000:80
-#       - 8001:443
+ 
