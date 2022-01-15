@@ -14,7 +14,6 @@ RUN a2enmod ssl
 RUN service apache2 restart
 
 # --------------- Setting Private Ports --------------- 
-EXPOSE 80 
 EXPOSE 443
 
 # --------------- Removing Unused Files ---------------
