@@ -5,6 +5,7 @@ services:
           image: heyimjustalex/176084_presta_image:176084_presta_image_v1
     ports:
       - 17608:443
+      - 17609:80
     restart: always
     environment:
       PS_INSTALL_AUTO: 0
@@ -15,5 +16,8 @@ services:
       DB_NAME: DB_176084
       PS_DEV_MODE: 0   
       ALLOW_OVERRIDE: 1
+      
+    deploy:
+      replicas: 1
 
  
